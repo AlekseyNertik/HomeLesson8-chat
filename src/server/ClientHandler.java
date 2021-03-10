@@ -12,7 +12,6 @@ public class ClientHandler {
     private DataOutputStream out;
     private String nickName;
     private String login;
-
     public ClientHandler(Server server, Socket socket) {
 
         try {
@@ -102,11 +101,9 @@ public class ClientHandler {
                     }
                 }
             }).start();
-
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
     void sendMsg(String msg) {
